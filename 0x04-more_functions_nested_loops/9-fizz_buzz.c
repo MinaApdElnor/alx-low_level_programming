@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
  * main - the entry point
  *
  * Return: 0 if Success
  */
-
 int main(void)
 {
 	int i;
@@ -13,15 +11,37 @@ int main(void)
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0)
-			printf("Fizz ");
+		{
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
+		}
 		else if (i % 5 == 0)
-			printf("Buzz ");
+		{
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
+		}
 		else if (i % 15 == 0)
-			printf("FizzBuzz ");
+		{
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
+		}
 		else
-			printf("%d ", i);
-
+			putchar(' ');
+			putchar(i);
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
