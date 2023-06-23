@@ -15,6 +15,6 @@ int main(void)
 	for (x = 1; x <= square; x++)
 		if (number % x == 0)
 			maxn = number / x;
-	printf("%ld \n", maxn);
+	printf("%ld\n", maxn);
 	return (0);
 }
