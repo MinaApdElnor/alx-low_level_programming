@@ -2,6 +2,7 @@
 
 /**
  * _islower -  checks for lowercase character.
+ * @c: take a number from the user
  *
  * Return: 1 if c is lowercase , 0 otherwise
  */
