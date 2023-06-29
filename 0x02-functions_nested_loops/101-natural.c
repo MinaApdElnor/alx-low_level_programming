@@ -15,9 +15,9 @@ int main(void)
 
 	for (i = 1; i < 1024; i++)
 	{
-		/*printf("%d,", (i * 3));*/
-		/*printf("%d,", (i * 5));*/
-		sum += (i * 3) + (i * 5);
+		if (i % 3 == 0 || i % 5 == 0)
+			sum += i;
+
 	}
 	printf("%ld", sum);
 	printf("\n");
