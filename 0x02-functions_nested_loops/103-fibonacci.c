@@ -8,25 +8,26 @@
 
 int main(void)
 {
-	long int f1, f2, result, sum;
-	int n;
+	long int f1, f2, result;
+	float sum;
+
 
 	f1 = 0;
 	f2 = 1;
 	result = 0;
 	sum = 0;
-	n = 0;
 
-	do {
-
+	while (1)
+	{
+		if (result > 4000000)
+			break;
 		result = f1 + f2;
 		f1 = f2;
 		f2 = result;
-		if (result % 2 == 0)
+		if ((result % 2) == 0)
 			sum += result;
-		n++;
-	} while (n < 10);
-	printf("%ld", sum);
-	printf("\n");
+	}
+
+	printf("%.0f\n", sum);
 	return (0);
 }
