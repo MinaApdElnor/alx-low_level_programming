@@ -17,10 +17,15 @@ int main(void)
 	n = 0;
 
 	do {
+		if (n == 49)
+			printf("%ld", f1 + f2);
+		else
+		{
 		result = f1 + f2;
 		f1 = f2;
 		f2 = result;
 		printf("%ld, ", result);
+		}
 		n++;
 	} while (n < 50);
 	printf("\n");
