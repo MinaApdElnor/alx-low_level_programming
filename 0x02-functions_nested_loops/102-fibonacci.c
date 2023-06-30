@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	int f1, f2, result, n;
+	long int f1, f2, result;
+	int n;
 
 	f1 = 0;
 	f2 = 1;
@@ -19,7 +20,7 @@ int main(void)
 		result = f1 + f2;
 		f1 = f2;
 		f2 = result;
-		printf("%d, ", result);
+		printf("%ld, ", result);
 		n++;
 	} while (n < 50);
 	printf("\n");
