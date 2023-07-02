@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - entry point
- * @*n: the passed pointer
+ * @n: the passed pointer
  *
  * Return: void
  */
