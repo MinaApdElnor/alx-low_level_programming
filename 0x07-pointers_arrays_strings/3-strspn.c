@@ -8,23 +8,27 @@
  * Return: int value
  */
 
-unsigned int _strspn(char *accept, char *s)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, found;
+	unsigned int length = 0;
 
 
-	for (i = 0; accept[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		found = 0;
-		for (j = 0; s[j] != '\0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (accept[i] == s[j])
+			if (accept[j] == s[i])
+			{
 				found = 1;
+				break;
+			}
 		}
 		if (found == 1)
-			continue;
+			length++;
 		else
 			break;
 	}
-	return (j+1);
+	return (length);
 }
