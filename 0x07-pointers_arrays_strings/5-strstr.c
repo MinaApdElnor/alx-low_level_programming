@@ -32,4 +32,6 @@ char *_strstr(char *haystack, char *needle)
 	}
 	if (found == 1)
 		return (ptr);
+	else
+		return (NULL);
 }
