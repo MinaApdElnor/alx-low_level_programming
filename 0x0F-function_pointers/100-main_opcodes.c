@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main _ entry point
+ * main - entry point
  * @argc: the number of args
  * @argv: arg vector
  *
