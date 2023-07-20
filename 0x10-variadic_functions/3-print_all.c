@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
  * format_char - print numbers
  * @separator: ksj

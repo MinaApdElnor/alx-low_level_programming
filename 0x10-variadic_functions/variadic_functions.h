@@ -1,5 +1,7 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct token - struct
@@ -7,7 +9,6 @@
  * @token: foem
  * @f: func
  */
-
 typedef struct token
 {
 	char *token;
